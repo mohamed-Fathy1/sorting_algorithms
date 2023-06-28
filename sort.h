@@ -2,6 +2,9 @@
 #define SORT_H
 /*Includes*/
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stddef.h>
 
 /*Structs*/
 /**
