@@ -21,14 +21,14 @@ void shell_sort(int *array, size_t size)
 		for (i = k; i < size; i++)
 		{
 			j = i;
-			tmp = array[j];
 
-			while (j >= k && tmp < array[j - k])
+			while (j >= k && array[j] < array[j - k])
 			{
+				tmp = array[j];
 				array[j]  = array[j - k];
+				array[j - k] = tmp;
 				j -= k;
 			}
-			array[j] = tmp;
 		}
 		print_array(array, size);
 
